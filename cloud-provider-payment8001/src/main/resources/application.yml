@@ -5,12 +5,12 @@ spring:
     name: cloud-payment-service
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  #当前数据库操作类型
-    driver-clss-name: org.gjt.mm.mysql.Driver #jdbc mysql驱动
-    url: jdbc:mysql://localhost:3306/zhenyuMysql?useUnicode=true&characterEncoding=utf-8&useSSL=false  #jdbc  url
+    driver-class-name: com.mysql.cj.jdbc.Driver #jdbc mysql驱动
+    url: jdbc:mysql://localhost:3306/fruits?useUnicode=true&characterEncoding=utf-8&useSSL=false  #jdbc  url
     username: root
-    passowrd: mysqlZhenyu0711
+    password: mysqlZhenyu0711
 
 
 mybatis:
-  mapperLocations: classPath:mapper/*.xml
+  mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.atguigu.springcloud.entities //所有entities所在的包
